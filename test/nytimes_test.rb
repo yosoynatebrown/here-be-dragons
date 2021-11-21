@@ -27,7 +27,7 @@ class NytimesTest < Minitest::Test
 
   def test_it_can_get_all_stories_with_subsection_of_politics
     result = []
-    @hash[:results].each do |article|
+    @hash[:results].map do |article|
       if article[:subsection] == 'Politics'
         result << article
       end
