@@ -3443,4 +3443,8 @@ class Nytimes
     }
   ]
 }
+  def result
+    Nytimes::DATA[:copyright]
+  end
+
 end
